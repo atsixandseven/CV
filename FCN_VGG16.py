@@ -24,11 +24,12 @@ print('Tensorflow version '  + tf.__version__)
 
 # downlad the dataset (zipped file)
 
-file_location = '/Users/woonghee/Desktop/MAKE/fcnn'
+file_location = '~./fcnn'
 
-local_zip = '/Users/woonghee/Desktop/MAKE/dataset1.zip'
+# https://drive.google.com/file/d/0B0d9ZiqAgFkiOHR1NTJhWVJMNEU/view
+local_zip = '~./dataset1.zip'
 zip_ref = zipfile.ZipFile(local_zip, 'r')
-zip_ref.extractall('/Users/woonghee/Desktop/MAKE/fcnn')
+zip_ref.extractall('~./fcnn')
 zip_ref.close()
 
 # pixel labels in the video frames
